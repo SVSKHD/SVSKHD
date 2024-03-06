@@ -15,7 +15,7 @@ const SvskhdNav = () => {
   return (
     <div>
       <Container>
-        <Navbar expand="lg" className={`bg-white shadow-lg p-2 rounded-4 ${isChecked ? 'dark-theme' : ''}`}>
+        <Navbar expand="lg" className={`bg-white mb-1 shadow-lg p-2 rounded-4 ${isChecked ? 'dark-theme' : ''}`}>
           <Navbar.Brand href="#">Navbar</Navbar.Brand>
           <button className='btn btn-base' onClick={toggleTheme}>
             {isChecked ? <FaSun /> : <FaMoon />}

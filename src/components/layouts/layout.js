@@ -8,17 +8,16 @@ const SvskhdLayout = (props) => {
 
     return (
         <>
-            <div >
-            <body style={{ backgroundColor: theme.colors.bg }} >
+            <body style={{ backgroundColor: theme.colors.bg }}>
+                <div className="p-2" />
                 <SvskhdNav />
-                
-                <div className="container content-box">
+                <div className="container content-box" style={{ color: theme.colors.text }}>
                     {props.children}
                     {JSON.stringify(theme.colors)}
                 </div>
                 <SvskhdFooter />
-                </body>
-            </div>
+                <div className="p-2" />
+            </body>
         </>
     );
 };
